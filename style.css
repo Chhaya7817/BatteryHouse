@@ -1,0 +1,231 @@
+*{padding:0;margin:0;box-sizing:border-box;}
+body{
+    font-family: sans-serif bold;
+}
+nav{
+    height:60px;
+    background-color: red;
+    text-align: center;
+    
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-between;
+    padding:0px 10px;
+
+}
+
+li{
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+nav li a{
+    text-decoration: none;
+    color:white;
+
+}
+nav li:hover{
+    font-weight: bold;
+    font-size: 24px;
+}
+#logo{
+    height:30px;
+    padding:8px;
+    border-radius: 10px;
+    border:5px solid green;
+    background-color: black;
+}
+
+
+#about{
+    height:fit-content;
+    padding:0px 20px;
+    background-color: blue;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+h2{
+    margin-bottom: 20px;
+}
+
+#product{
+    height:fit-content;
+    background-color: green;
+    padding:10px 20px;
+    padding-bottom: 20px;
+
+
+}
+img{
+    height:250px;
+    width:250px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.imgs{
+    display: flex;
+    margin:0px 30px;
+    justify-content:space-between;
+}
+figcaption{
+    display: block;
+    padding-top:10px;
+    font-size: 24px;
+    text-align: center;
+}
+#product img:hover{
+    height:280px;
+    width:280px;
+}
+.videos{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+iframe{
+    width:200px;
+
+}
+
+
+#services{
+    height:max-content;
+    background-color: grey;
+}
+h2{
+    font-size: 32px;
+    padding-top:20px;
+    margin-left:50px;
+}
+.serve{
+    display: flex;
+
+}
+#services main{
+    font-size: 1.1em;
+    width: 50%;
+    display: flex;
+    border-right:4px solid black ;
+}
+.serve aside{
+    font-size: 1.1em;
+    width: 50%;
+    display: flex;
+}
+.serve aside div:nth-of-type(2)
+{
+    padding-bottom: 20px;
+}
+.serve p{
+    margin:50px;
+}
+
+#contactus
+{
+    font-size: 2em;
+    height:300px;
+    margin: 50px;
+    display: flex;
+}
+#contactus main{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    border-right: 4px solid black;
+}
+#contactus main div{
+    margin-bottom: 30px;
+}
+#contactus main div img{
+    height:40px;
+    width:40px;
+    display: inline-block;
+}
+#contactus aside{
+    width:50%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1060px) {
+   .serve main{
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+
+   }
+   .serve aside{
+    display: flex;
+    flex-direction: column;
+
+   }
+   .serve p{
+    margin:30px;
+}
+img{
+    height:200px;
+    width:200px;}
+    iframe{
+        width:180px;
+    
+    }
+    #contactus
+    {
+        font-size: 1.5em;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+
+
+img{
+    height:250px;
+    width:250px;
+  
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.videos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+h2{
+    text-align: center;
+}
+iframe{
+    padding-bottom: 20px;
+}
+.serve{
+    display: flex;
+    flex-direction: column;
+
+}
+#services .serve main{
+    width: 100%;
+    border:none;
+;
+}
+.serve aside{width:100%;
+}
+#contactus{
+    flex-direction: column;
+}
+#contactus main{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border:none;
+
+}
+#contactus aside{
+    width:100%;
+}
+  }
